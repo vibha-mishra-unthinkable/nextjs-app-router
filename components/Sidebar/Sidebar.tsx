@@ -12,7 +12,7 @@ const Sidebar = () => {
         <Link href="/dashboard" className="hover:underline">
           Dashboard
         </Link>
-        <Link href="/blogs" className="hover:underline">
+        <Link href="/blog" className="hover:underline">
           Blogs
         </Link>
         <Link href="/about" className="hover:underline">

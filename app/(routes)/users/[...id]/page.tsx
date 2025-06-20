@@ -10,10 +10,14 @@ export default function UserIdsPage({ params }: { params: { id: string[] } }) {
     console.log('User IDs:', params);
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold">Dynamic Users Path</h1>
+      <h1 className="text-2xl font-bold">Catch All Dynamic Users Path</h1>
       <p className="mt-2 text-gray-700">
         IDs from the URL: <strong>{params.id?.join(', ')}</strong>
       </p>
     </div>
   );
 }
+
+//Next.js routing follows this precedence:
+
+// Static > Dynamic > Catch-all > Optional Catch-all
