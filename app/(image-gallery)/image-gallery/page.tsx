@@ -18,6 +18,5 @@ export async function getImagesFromAPI() {
 
 export default async function ImageGallery() {
   const images = await getImagesFromAPI();
-  console.log("images", images);
   return <ImageGalleryComponent images={images} />;
 }
